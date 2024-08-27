@@ -14,7 +14,7 @@ if "%ID%"=="0" (
     taskkill /f /im anydesk.exe > nul
     goto START_ANYDESK
 )
-echo Minarul-BD | anydesk.exe --set-password _full_access
+echo Minarul01BD | anydesk.exe --set-password _full_access
 start "" /MAX "C:\Users\Public\Desktop\VMQuickConfig"
 python -c "import pyautogui as pag; pag.click(143, 487, duration=5)"
 python -c "import pyautogui as pag; pag.click(155, 554, duration=2)"
