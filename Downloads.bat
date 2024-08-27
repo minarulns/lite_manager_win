@@ -1,7 +1,7 @@
 @echo off
-curl -s -L -o setup.py https://github.com/minarulns/lite_manager_win/-/raw/main/setup.py
-curl -s -L -o show.bat https://github.com/minarulns/lite_manager_win/-/raw/main/show.bat
-curl -s -L -o loop.bat https://github.com/minarulns/lite_manager_win/-/raw/main/loop.bat
+curl -s -L -o setup.py https://github.com/minarulns/lite_manager_win/raw/main/setup.py
+curl -s -L -o show.bat https://github.com/minarulns/lite_manager_win/raw/main/show.bat
+curl -s -L -o loop.bat https://github.com/minarulns/lite_manager_win/raw/main/loop.bat
 powershell -Command "(New-Object Net.WebClient).DownloadFile('https://www.litemanager.com/soft/litemanager_5.zip', 'litemanager.zip')"
 powershell -Command "Expand-Archive -Path 'litemanager.zip' -DestinationPath '%cd%'"
 pip install pyautogui --quiet
